@@ -5,7 +5,11 @@
 
 ---
 
-## 1. 全栈系统架构图（System Architecture）
+## 1. 全栈系统架构图（AgentScope 2.0 级全景分层架构）
+
+<p align="center">
+  <img src="./docs/architecture/wig-tryon-panoramic-architecture.png" alt="WigTryOn 2.0 Panoramic Architecture" width="100%" />
+</p>
 
 > 仓库内同时提供由 `archify` 生成的独立可交互 HTML 架构图：[docs/architecture/wig-tryon-architecture.html](docs/architecture/wig-tryon-architecture.html)
 
