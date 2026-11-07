@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+:root {
+  --neon-blue: #00d4ff;
+  --neon-purple: #b347ff;
+  --neon-pink: #ff47b3;
+  --dark-bg: #050a14;
+  --dark-card: #0a1628;
+  --dark-border: #1a2d4f;
+  --glass-bg: rgba(10, 22, 40, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-bg);
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2d4f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff44;
+}
+
+/* Neon glow effects */
+.neon-glow-blue {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.1);
+}
+.neon-glow-purple {
+  box-shadow: 0 0 20px rgba(179, 71, 255, 0.3), 0 0 40px rgba(179, 71, 255, 0.1);
+}
+.neon-text-blue {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.4);
+}
+.neon-text-purple {
+  text-shadow: 0 0 10px rgba(179, 71, 255, 0.8), 0 0 20px rgba(179, 71, 255, 0.4);
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(10, 22, 40, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Grid pattern */
+.tech-grid {
+  background-image: 
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Gradient buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #b347ff);
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.4s;
+}
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  color: #00d4ff;
+}
+.btn-outline:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff, #b347ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #ff47b3, #b347ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated border */
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(0, 212, 255, 0.3); box-shadow: 0 0 10px rgba(0, 212, 255, 0.1); }
+  50% { border-color: rgba(179, 71, 255, 0.5); box-shadow: 0 0 20px rgba(179, 71, 255, 0.2); }
+}
+.animate-border {
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+/* Progress bar animation */
+@keyframes progressShine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.progress-bar {
+  background: linear-gradient(90deg, #00d4ff, #b347ff, #00d4ff);
+  background-size: 200% 100%;
+  animation: progressShine 2s linear infinite;
+}
+
+/* Pulse dot */
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+.pulse-dot {
+  animation: pulseDot 1.5s ease-in-out infinite;
+}
+
+/* Scan line */
+@keyframes scanLine {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+.scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+  animation: scanLine 2s linear infinite;
+}
+
+/* Floating particles */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+  50% { transform: translateY(-20px) rotate(180deg); opacity: 0.3; }
+}
+
+/* Star rating */
+.star-filled { color: #f59e0b; text-shadow: 0 0 8px rgba(245, 158, 11, 0.6); }
+.star-empty { color: #374151; }
+
+/* Slider compare */
+.compare-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: col-resize;
+  user-select: none;
+}
+
+/* Tab underline */
+.tab-active {
+  border-bottom: 2px solid #00d4ff;
+  color: #00d4ff;
+}
+
+/* Mobile container */
+.mobile-container {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Hexagon */
+.hex-badge {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: rotate360 8s linear infinite;
+}
+
+@keyframes pulseRing {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+.pulse-slow {
+  animation: pulseRing 2.6s ease-in-out infinite;
+}
+.pulse-fast {
+  animation: pulseRing 1.4s ease-in-out infinite;
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+.ripple {
+  animation: ripple 1.5s ease-out infinite;
+}
+
+/* Tag chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.chip-blue {
+  border-color: rgba(0, 212, 255, 0.4);
+  background: rgba(0, 212, 255, 0.08);
+  color: #00d4ff;
+}
+.chip-purple {
+  border-color: rgba(179, 71, 255, 0.4);
+  background: rgba(179, 71, 255, 0.08);
+  color: #b347ff;
+}
+.chip-green {
+  border-color: rgba(0, 255, 150, 0.4);
+  background: rgba(0, 255, 150, 0.08);
+  color: #00ff96;
+}
+
+/* Page transitions */
+.page-enter {
+  animation: pageEnter 0.3s ease-out;
+}
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.page-back-enter {
+  animation: pageBackEnter 0.3s ease-out;
+}
+@keyframes pageBackEnter {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

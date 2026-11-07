@@ -1,0 +1,120 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: wig-tryon-backend
+  servlet:
+    multipart:
+      max-file-size: 12MB
+      max-request-size: 12MB
+
+app:
+  # 本地文件存储目录（替代 MinIO，免 Docker）。相对路径基于运行目录。
+  storage:
+    dir: ./data/storage
+    # 数据目录：WigAsset/ModelAsset/Showcase 的 JSON 落盘 + 上传的本体图文件
+    data-dir: ${APP_STORAGE_DATA_DIR:./data}
+    # 对外可访问的基础地址，用于拼接图片 URL。
+    # 真机/真实模型联调强烈建议改成 HTTPS 公网地址（OSS/CDN/内网穿透），
+    # 否则 localhost 图片只能走 base64 直传，大图慢且易超时、质量打折。
+    public-base-url: ${APP_STORAGE_PUBLIC_BASE_URL:http://localhost:8080/files}
+  # 会话/任务保留时长（小时）
+  session-ttl-hours: 24
+  # 运营管理后台（资产分层架构）。MVP 单 token 鉴权。
+  # enabled=false（默认）→ /admin/** 全部 404，演示零暴露。
+  # 启用：WIG_ADMIN_ENABLED=true WIG_ADMIN_TOKEN=任意复杂字符串 ./mvnw spring-boot:run
+  admin:
+    enabled: ${WIG_ADMIN_ENABLED:false}
+    token: ${WIG_ADMIN_TOKEN:}
+  ai:
+    # 运行模式：seed / mock / real
+    #   seed —— 默认。用预生成的"种子效果图"，无需任何 Key，离线即可完美演示效果墙。
+    #   mock —— 复用上传原图作为占位（仅验证流程）。
+    #   real —— 调用真实大模型（需 DASHSCOPE_API_KEY；本地图片会自动转 data URI 联调）。
+    mode: ${AI_MODE:real}
+    # strict-real=true：真实模式失败时直接报错，便于联调排查；false：自动降级 seed 保障演示。
+    strict-real: ${AI_STRICT_REAL:true}
+    # 试戴生成 provider：dashscope（默认）/ yunwu（云雾代理）/ ark（火山方舟 Doubao Seedream 直连）/ flux。
+    # 仅影响 generateTryon；分析/检测仍走 dashscope/seed/mock 链路。
+    tryon-provider: ${AI_TRYON_PROVIDER:dashscope}
+    # 演示加速：true 时推荐不调 VL，按 category 固定推 2 款
+    demo-fast-recommend: ${AI_DEMO_FAST_RECOMMEND:true}
+    # 演示加速：true 时上传后跳过 qwen-vl 人脸检测，直接 PASSED
+    demo-fast-face-check: ${AI_DEMO_FAST_FACE_CHECK:true}
+
+# 阿里云百炼 DashScope 配置（中国区推荐）。仅当 app.ai.mode=real 时启用。
+dashscope:
+  # 安全：禁止把真实 Key 写成默认值（会随仓库泄露）。只允许通过环境变量注入。
+  api-key: ${DASHSCOPE_API_KEY:}
+  vision-model: ${DASHSCOPE_VISION_MODEL:qwen-vl-max}
+  # 试戴生成模型实测（2026-06）：
+  #   qwen-image-edit       —— 10-25s，阿里 Qwen 图像编辑专用，主体保留强 ★★★★★【默认】
+  #   qwen-image-edit-plus  —— 12-30s，增强版，发丝细节更好
+  #   wan2.5-i2i-preview    —— 20-40s，多图融合「图生图」，会重画主体（不适合保身份）
+  #   wan2.7-image-pro      —— 15-30s，阿里最新图像专业版（图生图）
+  #   wanx2.1-imageedit     —— 10-25s，旧版通用图像编辑，效果一般
+  # qwen-image-edit* 走 multimodal-generation 同步接口（DashScopeAiService 自动识别）；
+  # wan*/wanx* 走 image-synthesis 异步任务接口。
+  image-edit-model: ${DASHSCOPE_IMAGE_EDIT_MODEL:qwen-image-edit}
+  # 备选模型：首轮/重试变化仍小于阈值时，自动用该模型再尝试一次（留空表示不启用）
+  backup-image-edit-model: ${DASHSCOPE_BACKUP_IMAGE_EDIT_MODEL:}
+  # 试戴策略：replace_first（优先参考图+发区mask替换）/ prompt_only（仅文本编辑）
+  tryon-strategy: ${DASHSCOPE_TRYON_STRATEGY:replace_first}
+  # 图像编辑 function，默认 description_edit；如要切 inpaint，可通过环境变量覆盖
+  tryon-function: ${DASHSCOPE_TRYON_FUNCTION:description_edit}
+  # 严格替换输入：true 时 reference/mask 参数被拒绝会直接失败，不做静默降级
+  strict-replace-inputs: ${DASHSCOPE_STRICT_REPLACE_INPUTS:true}
+  # 变化分阈值：低于该值触发强化重试
+  min-change-score: ${DASHSCOPE_MIN_CHANGE_SCORE:7.0}
+  # ---- 以下仅当 image-edit-model 为 wan2.5+ 多图融合模型时生效 ----
+  # prompt 智能改写（中文短 prompt 建议开启）
+  prompt-extend: ${DASHSCOPE_PROMPT_EXTEND:true}
+  # 结果图水印（商用演示一般关闭）
+  watermark: ${DASHSCOPE_WATERMARK:false}
+  # 输出分辨率：留空跟随输入；可填 "1280*1280" / "2K"
+  image-size: ${DASHSCOPE_IMAGE_SIZE:}
+  # 人脸区护栏阈值：0 表示关闭；>0 时若下半脸变化过大判定为疑似改脸并重试/回退（无需人脸库）
+  face-max-change-score: ${DASHSCOPE_FACE_MAX_CHANGE_SCORE:0.0}
+  multimodal-url: https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation
+  image-synthesis-url: https://dashscope.aliyuncs.com/api/v1/services/aigc/image2image/image-synthesis
+  task-query-url: https://dashscope.aliyuncs.com/api/v1/tasks/
+  # 单次任务轮询最大等待秒数
+  task-timeout-seconds: 120
+
+# 中转站（OpenAI 兼容代理）配置：当前仅用于联调测试 /api/system/yunwu-ping。
+# 真实集成到主试戴流程要先确认中转站支持 /v1/images/edits（保身份所需），见 ping 结果。
+# 火山方舟（Doubao Seedream 等）直连配置。小程序选「Doubao Seedream 5.0」时走此链路。
+volcengine:
+  ark:
+    api-key: ${ARK_API_KEY:}
+    base-url: ${ARK_BASE_URL:https://ark.cn-beijing.volces.com/api/v3}
+    image-model: ${ARK_IMAGE_MODEL:doubao-seedream-5-0-260128}
+    image-size: ${ARK_IMAGE_SIZE:2K}
+    watermark: ${ARK_WATERMARK:false}
+    timeout-seconds: ${ARK_TIMEOUT_SECONDS:180}
+
+yunwu:
+  api-key: ${YUNWU_API_KEY:}
+  base-url: ${YUNWU_BASE_URL:https://yunwu.ai/v1}
+  # 模型选型实测（2026-06）：
+  #   gpt-image-1.5-all       —— 35-90s，身份保真⭐⭐⭐⭐⭐（最强但慢）
+  #   gpt-image-1-all         —— 25-60s，身份保真⭐⭐⭐⭐  （快 30%，效果略降）
+  #   qwen-image-edit-2509    —— 8-20s，身份保真⭐⭐⭐⭐⭐（业界最快+亚洲面孔强）
+  #   qwen-image-max          —— 10-25s（阿里 Qwen 图像最强版本，2025-12-30）
+  #   doubao-seedream-4-0-250828 —— 5-15s（前端 doubao-seedream-5 别名，比 5.0 稳）
+  #   doubao-seedream-5-0-260128 —— 慢且 429 多，已弃用
+  #   doubao-seedream-4-5-251128 —— 12-25s
+  # 切换：YUNWU_IMAGE_MODEL=qwen-image-edit-2509 ./mvnw spring-boot:run
+  image-model: ${YUNWU_IMAGE_MODEL:gpt-image-1.5-all}
+  # 单次调用超时（秒）。图像生成 30-120s 是常态，建议给 180+
+  timeout-seconds: ${YUNWU_TIMEOUT_SECONDS:180}
+  # 试戴端点：chat（推荐，多模态多图融合）/ edits（标准 OpenAI 单图编辑）
+  tryon-endpoint: ${YUNWU_TRYON_ENDPOINT:chat}
+  chat-path: ${YUNWU_CHAT_PATH:/chat/completions}
+  edits-path: ${YUNWU_EDITS_PATH:/images/edits}
+  generations-path: ${YUNWU_GENERATIONS_PATH:/images/generations}
+
+logging:
+  level:
+    com.wig.tryon: INFO

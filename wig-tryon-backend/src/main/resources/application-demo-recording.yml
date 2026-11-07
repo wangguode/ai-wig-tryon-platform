@@ -1,0 +1,16 @@
+# 录屏演示 profile：spring.profiles.active=demo-recording
+# Key 从 data/demo-recording.env 注入，勿把 sk- 写进本文件。
+app:
+  ai:
+    mode: real
+    strict-real: false
+    tryon-provider: dashscope
+    demo-fast-recommend: true
+    demo-fast-face-check: true
+
+dashscope:
+  image-edit-model: qwen-image-edit-plus
+  task-timeout-seconds: 90
+
+yunwu:
+  timeout-seconds: 180

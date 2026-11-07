@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "AI Hairstyle & Wig Virtual Try-On Platform // Full-Stack Architecture",
+    "output": "wig-tryon-architecture.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    { "id": "user_ui", "type": "frontend", "label": "Mini-Program / H5 UI", "sublabel": "React 19 + Vite + Tailwind 4", "pos": [40, 160], "size": [155, 64], "tag": "Consumer Flow" },
+    { "id": "admin_ui", "type": "frontend", "label": "Admin Studio Console", "sublabel": "Wig / Model / Showcase / Import", "pos": [40, 340], "size": [155, 64], "tag": "X-Admin-Token" },
+    { "id": "controllers", "type": "backend", "label": "Spring Boot 3 API", "sublabel": "Photo / Tryon / Recommend / Admin", "pos": [270, 250], "size": [160, 68], "tag": ":8080 REST" },
+    { "id": "tryon_svc", "type": "backend", "label": "Tryon & Asset Services", "sublabel": "Async Executor + Progress Ticker", "pos": [500, 160], "size": [165, 64] },
+    { "id": "repos", "type": "database", "label": "JSON & TTL Repositories", "sublabel": "WigAsset / ModelAsset / Session", "pos": [500, 360], "size": [165, 64], "tag": "Zero-DB Ready" },
+    { "id": "ai_router", "type": "security", "label": "AiServiceRouter", "sublabel": "Dynamic Model & Fallback Switch", "pos": [740, 250], "size": [160, 68], "tag": "Graceful Degrade" },
+    { "id": "dashscope", "type": "cloud", "label": "Alibaba DashScope", "sublabel": "qwen-vl-max + qwen-image-edit", "pos": [970, 110], "size": [165, 60] },
+    { "id": "volc_ark", "type": "cloud", "label": "Volcengine Ark", "sublabel": "doubao-seedream-5-0", "pos": [970, 210], "size": [165, 60] },
+    { "id": "yunwu", "type": "cloud", "label": "Yunwu Proxy & Flux", "sublabel": "gpt-image-1.5 / flux-kontext", "pos": [970, 310], "size": [165, 60] },
+    { "id": "seed_fallback", "type": "database", "label": "Seed & Mock Engine", "sublabel": "Offline Deterministic Assets", "pos": [970, 410], "size": [165, 60] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Frontend Layer (ai-hairstyle-mini-program-ui)", "wraps": ["user_ui", "admin_ui"] },
+    { "kind": "region", "label": "Spring Boot 3 Core (wig-tryon-backend)", "wraps": ["controllers", "tryon_svc", "repos", "ai_router"] }
+  ],
+  "connections": [
+    { "id": "e1", "from": "user_ui", "to": "controllers", "label": "Upload / Tryon / Poll", "variant": "emphasis" },
+    { "id": "e2", "from": "admin_ui", "to": "controllers", "label": "Catalog & Studio", "variant": "security" },
+    { "id": "e3", "from": "controllers", "to": "tryon_svc", "label": "Submit Task" },
+    { "id": "e4", "from": "tryon_svc", "to": "repos", "label": "Read Bare Wig" },
+    { "id": "e5", "from": "tryon_svc", "to": "ai_router", "label": "GenContext", "variant": "emphasis" },
+    { "id": "e6", "from": "ai_router", "to": "dashscope", "label": "Qwen VL + Edit" },
+    { "id": "e7", "from": "ai_router", "to": "volc_ark", "label": "Seedream 5.0" },
+    { "id": "e8", "from": "ai_router", "to": "yunwu", "label": "GPT Image / Flux" },
+    { "id": "e9", "from": "ai_router", "to": "seed_fallback", "label": "Fallback", "variant": "dashed" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Consumer & Admin Dual UI", "items": ["Consumer: Photo upload -> Face analysis -> Wig selection -> Before/After slider", "Admin Studio: Bare-wig extraction, AI model generation, customer catalog wizard"] },
+    { "dot": "emerald", "title": "Three-Tier Asset Architecture", "items": ["WigAsset (bare wig reference prevents identity drift)", "ModelAsset (standardized portrait base)", "WigShowcase (curated gallery & try-on wall)"] },
+    { "dot": "rose", "title": "Pluggable Multi-Model AI Router", "items": ["Alibaba Cloud Bailian (qwen-vl-max & qwen-image-edit-plus)", "Volcengine Ark (doubao-seedream-5-0) & Yunwu (gpt-image-1.5 / flux-kontext)", "Zero-dependency Seed/Mock fallback when offline or without keys"] }
+  ]
+}

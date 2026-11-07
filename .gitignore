@@ -1,0 +1,28 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Node / Frontend
+node_modules/
+ai-hairstyle-mini-program-ui/node_modules/
+ai-hairstyle-mini-program-ui/dist/
+*.log
+
+# Java / Maven Backend
+target/
+wig-tryon-backend/target/
+*.class
+*.jar
+*.war
+
+# Secrets & Local Runtime Storage (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+wig-tryon-backend/data/demo-recording.env
+wig-tryon-backend/data/storage/
+.github/
+.idea/
+.vscode/
