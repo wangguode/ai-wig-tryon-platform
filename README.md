@@ -8,52 +8,13 @@
 ## 1. 全栈系统架构图（AgentScope 2.0 级全景分层架构）
 
 <p align="center">
-  <img src="./docs/architecture/wig-tryon-panoramic-architecture.png" alt="WigTryOn 2.0 Panoramic Architecture" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./docs/assets/architecture-dark.svg">
+    <img alt="CrownStudio WigTryOn 2.0 Panoramic Architecture" src="./docs/assets/architecture-light.svg" width="100%">
+  </picture>
 </p>
 
-> 仓库内同时提供由 `archify` 生成的独立可交互 HTML 架构图：[docs/architecture/wig-tryon-architecture.html](docs/architecture/wig-tryon-architecture.html)
-
-```mermaid
-flowchart TB
-    subgraph Frontend["前端交互层：ai-hairstyle-mini-program-ui (React 19 + TypeScript + Vite 6 + Tailwind 4)"]
-        subgraph ConsumerUI["消费者试戴端 (Consumer Flow)"]
-            Home["HomePage / SelectHairPage\n(按品类：女士长发/短发/男士精英/银发遮盖)"]
-            Upload["UploadPage\n(自拍上传 · 实时人脸检测 · 脸型智能分析)"]
-            TryonWall["TryonWallPage & CompareSlider\n(异步进度条 92*(1-e^-t/30) · 前后滑动对比 · 局部微调)"]
-            StoreFlow["StoreListPage / StoreDetailPage\n(LBS 附近门店预约 · 导购跟进)"]
-        end
-        subgraph AdminUI["运营资产工作台 (AdminPage · X-Admin-Token 鉴权)"]
-            WigTab["WigAssetTab\n(光秃假发本体图剥离生成 BareWigGenerator)"]
-            ModelTab["ModelAssetTab\n(标准 AI 模特底图生成 ModelPortraitGenerator)"]
-            ShowcaseTab["ShowcaseStudioTab\n(模特 × 假发批量合成展厅 ShowcaseService)"]
-            ImportWizard["CustomerImportWizard\n(客户商品画册一键批量导入与校验)"]
-        end
-    end
-
-    subgraph Backend["后端服务层：wig-tryon-backend (Spring Boot 3.2 · Java 17 · 零外部中间件依赖)"]
-        Controllers["REST Controllers\nPhoto / Recommend / Tryon / Store / Feedback / Admin*"]
-        TryonEngine["TryonService & PhotoService\n异步线程池编排 · 伪进度平滑推进器 · 图像质量变化分校验"]
-        AssetRepos["内存 + JSON 持久化仓库\nCatalog / WigAsset / ModelAsset / WigShowcase / Session(24h TTL)"]
-        Router["AiServiceRouter (@Primary 多模型动态路由器)\n支持前端按 preferredModel 实时切换底层生成引擎"]
-    end
-
-    subgraph Providers["多模态大模型与离线降级矩阵 (Pluggable AI Providers)"]
-        DashScope["阿里云百炼 DashScope\nqwen-vl-max (脸型/发际线分析)\nqwen-image-edit-plus / wan2.5 (试戴编辑)"]
-        VolcArk["火山方舟 Volcengine Ark\ndoubao-seedream-5-0-260128"]
-        Yunwu["OpenAI 兼容网关 / Flux\ngpt-image-1.5-all · flux-kontext"]
-        SeedMock["SeedAiService / MockAiService\n零 Key 离线确定性降级兜底"]
-    end
-
-    ConsumerUI -->|"REST JSON / Multipart"| Controllers
-    AdminUI -->|"X-Admin-Token"| Controllers
-    Controllers --> TryonEngine
-    TryonEngine --> AssetRepos
-    TryonEngine --> Router
-    Router -->|"provider=dashscope"| DashScope
-    Router -->|"provider=ark"| VolcArk
-    Router -->|"provider=yunwu/flux"| Yunwu
-    Router -.->|"strict-real=false 异常/无Key自动降级"| SeedMock
-```
+> 架构遵循 AgentScope 2.0 工业级全景架构范式，涵盖左侧多端交互协议/运营工作台/多模态模型矩阵、顶部 468 点头颅三维几何与边缘渲染基础设施、中上部沙龙医疗级应用场景胶囊与品牌核心、中央双轨试戴合成引擎与三维发际线融合状态机、右侧隐私与履约工具链，以及底部运行时可观测体系。支持随 GitHub 主题自动在明亮/暗色模式间切换。
 
 ---
 

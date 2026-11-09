@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1260" width="100%" height="100%" style="background:#0B1120;font-family:'Inter','PingFang SC','Microsoft YaHei',sans-serif;">
+<defs>
+  <filter id="sh" x="-4%" y="-4%" width="108%" height="112%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.06"/>
+  </filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M0,1.5 L8.5,5 L0,8.5 z" fill="#F8FAFC"/>
+  </marker>
+</defs>
+<rect width="1800" height="1260" fill="#0B1120"/>
+<rect x="24" y="24" width="236" height="250" rx="16" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(62,68)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#16A34A"/><circle cx="9" cy="-9" r="2.5" fill="#16A34A" opacity="0.7"/></g>
+<text x="88" y="74" font-size="18" font-weight="700" fill="#F8FAFC">WeChat MiniProg</text>
+<g transform="translate(62,122)" stroke="#0284C7" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#0284C7" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#0284C7" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#0284C7" fill-opacity="0.42"/></g>
+<text x="88" y="128" font-size="18" font-weight="700" fill="#F8FAFC">H5 Mobile Kiosk</text>
+<g transform="translate(62,176)"><polygon points="0,-13 11,-6.5 11,6.5 0,13 -11,6.5 -11,-6.5" fill="#7C3AED" opacity="0.16" stroke="#7C3AED" stroke-width="2"/><circle cx="0" cy="0" r="4.5" fill="#7C3AED"/></g>
+<text x="88" y="182" font-size="18" font-weight="700" fill="#F8FAFC">iPad Store Mirror</text>
+<g transform="translate(62,230)"><polygon points="2,-13 -9,1 -1,1 -3,13 9,-2 1,-2" fill="#EA580C"/></g>
+<text x="88" y="236" font-size="18" font-weight="700" fill="#F8FAFC">REST Try-On API</text>
+<rect x="24" y="294" width="236" height="200" rx="16" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(62,342)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#D97706"/><circle cx="9" cy="-9" r="2.5" fill="#D97706" opacity="0.7"/></g>
+<text x="88" y="343" font-size="18" font-weight="800" fill="#F8FAFC">CrownStudio Web</text>
+<text x="88" y="360" font-size="11.5" font-weight="500" fill="#94A3B8">Editorial Salon UI</text>
+<g transform="translate(62,400)" stroke="#2563EB" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#2563EB" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#2563EB" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#2563EB" fill-opacity="0.42"/></g>
+<text x="88" y="401" font-size="18" font-weight="800" fill="#F8FAFC">SKU Admin Console</text>
+<text x="88" y="418" font-size="11.5" font-weight="500" fill="#94A3B8">Catalog &amp; Inventory</text>
+<g transform="translate(62,458)"><path d="M0,-12 L10,-8 V1 C10,7 5,11 0,13 C-5,11 -10,7 -10,1 V-8 Z" fill="#10B981" opacity="0.18" stroke="#10B981" stroke-width="2"/><circle cx="0" cy="0" r="3.5" fill="#10B981"/></g>
+<text x="88" y="459" font-size="18" font-weight="800" fill="#F8FAFC">Lead Capture CRM</text>
+<text x="88" y="476" font-size="11.5" font-weight="500" fill="#94A3B8">Store Appointment</text>
+<rect x="24" y="514" width="236" height="722" rx="16" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(60,564)"><rect x="-13" y="-11" width="26" height="22" rx="7" fill="#2563EB" opacity="0.14"/><path d="M-8,2 C-8,-5 2,-7 7,-2 C9,0 11,-3 12,-5 C12,1 9,6 2,6 C-4,6 -8,4 -8,2 Z" fill="#2563EB"/><circle cx="2" cy="-1" r="1.6" fill="#FFFFFF"/></g>
+<text x="88" y="570" font-size="17.5" font-weight="700" fill="#F8FAFC">DeepSeek V3/R1</text>
+<g transform="translate(60,624)"><polygon points="0,-13 11,-6.5 11,6.5 0,13 -11,6.5 -11,-6.5" fill="#7C3AED" opacity="0.16" stroke="#7C3AED" stroke-width="2"/><circle cx="0" cy="0" r="4.5" fill="#7C3AED"/></g>
+<text x="88" y="630" font-size="17.5" font-weight="700" fill="#F8FAFC">Qwen 2.5 / Omni</text>
+<g transform="translate(60,684)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#D97706"/><circle cx="9" cy="-9" r="2.5" fill="#D97706" opacity="0.7"/></g>
+<text x="88" y="690" font-size="17.5" font-weight="700" fill="#F8FAFC">Claude 4.6 Sonnet</text>
+<g transform="translate(60,744)" stroke="#10B981" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#10B981" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#10B981" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#10B981" fill-opacity="0.42"/></g>
+<text x="88" y="750" font-size="17.5" font-weight="700" fill="#F8FAFC">OpenAI GPT-4o</text>
+<g transform="translate(60,804)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#3B82F6"/><circle cx="9" cy="-9" r="2.5" fill="#3B82F6" opacity="0.7"/></g>
+<text x="88" y="810" font-size="17.5" font-weight="700" fill="#F8FAFC">Gemini 2.5 Pro</text>
+<g transform="translate(60,864)" stroke="#EC4899" stroke-width="2.6" stroke-linecap="round"><line x1="-9" y1="-4" x2="-9" y2="4"/><line x1="-4.5" y1="-9" x2="-4.5" y2="9"/><line x1="0" y1="-12" x2="0" y2="12"/><line x1="4.5" y1="-7" x2="4.5" y2="7"/><line x1="9" y1="-3" x2="9" y2="3"/></g>
+<text x="88" y="870" font-size="17.5" font-weight="700" fill="#F8FAFC">SenseVoice 16kHz</text>
+<g transform="translate(60,924)" stroke="#F97316" stroke-width="2.6" stroke-linecap="round"><line x1="-9" y1="-4" x2="-9" y2="4"/><line x1="-4.5" y1="-9" x2="-4.5" y2="9"/><line x1="0" y1="-12" x2="0" y2="12"/><line x1="4.5" y1="-7" x2="4.5" y2="7"/><line x1="9" y1="-3" x2="9" y2="3"/></g>
+<text x="88" y="930" font-size="17.5" font-weight="700" fill="#F8FAFC">CosyVoice / TTS</text>
+<g transform="translate(60,984)" stroke="#14B8A6" stroke-width="2"><line x1="-7" y1="-6" x2="7" y2="-6"/><line x1="-7" y1="-6" x2="0" y2="8"/><line x1="7" y1="-6" x2="0" y2="8"/><circle cx="-7" cy="-6" r="3.5" fill="#14B8A6"/><circle cx="7" cy="-6" r="3.5" fill="#14B8A6"/><circle cx="0" cy="8" r="3.5" fill="#14B8A6"/></g>
+<text x="88" y="990" font-size="17.5" font-weight="700" fill="#F8FAFC">BGE-M3 Embed</text>
+<g transform="translate(60,1044)"><polygon points="2,-13 -9,1 -1,1 -3,13 9,-2 1,-2" fill="#6366F1"/></g>
+<text x="88" y="1050" font-size="17.5" font-weight="700" fill="#F8FAFC">Ollama / vLLM</text>
+<g transform="translate(60,1104)"><polygon points="0,-13 11,-6.5 11,6.5 0,13 -11,6.5 -11,-6.5" fill="#0284C7" opacity="0.16" stroke="#0284C7" stroke-width="2"/><circle cx="0" cy="0" r="4.5" fill="#0284C7"/></g>
+<text x="88" y="1110" font-size="17.5" font-weight="700" fill="#F8FAFC">DashScope API</text>
+<g transform="translate(60,1164)" stroke="#8B5CF6" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#8B5CF6" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#8B5CF6" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#8B5CF6" fill-opacity="0.42"/></g>
+<text x="88" y="1170" font-size="17.5" font-weight="700" fill="#F8FAFC">SiliconFlow</text>
+<rect x="296" y="24" width="1478" height="152" rx="16" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(360,72)" stroke="#2563EB" stroke-width="2"><line x1="-7" y1="-6" x2="7" y2="-6"/><line x1="-7" y1="-6" x2="0" y2="8"/><line x1="7" y1="-6" x2="0" y2="8"/><circle cx="-7" cy="-6" r="3.5" fill="#2563EB"/><circle cx="7" cy="-6" r="3.5" fill="#2563EB"/><circle cx="0" cy="8" r="3.5" fill="#2563EB"/></g>
+<text x="384" y="79" font-size="19.5" font-weight="800" fill="#F8FAFC">468-Pt FaceMesh</text>
+<g transform="translate(620,72)"><polygon points="0,-13 11,-6.5 11,6.5 0,13 -11,6.5 -11,-6.5" fill="#7C3AED" opacity="0.16" stroke="#7C3AED" stroke-width="2"/><circle cx="0" cy="0" r="4.5" fill="#7C3AED"/></g>
+<text x="644" y="79" font-size="19.5" font-weight="800" fill="#F8FAFC"> cranial Ratio Calc</text>
+<g transform="translate(880,72)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#EA580C"/><circle cx="9" cy="-9" r="2.5" fill="#EA580C" opacity="0.7"/></g>
+<text x="904" y="79" font-size="19.5" font-weight="800" fill="#F8FAFC">Alpha Feathering</text>
+<g transform="translate(1150,72)"><polygon points="2,-13 -9,1 -1,1 -3,13 9,-2 1,-2" fill="#16A34A"/></g>
+<text x="1174" y="79" font-size="19.5" font-weight="800" fill="#F8FAFC">Skin-Tone LUT</text>
+<g transform="translate(1410,72)" fill="none" stroke="#0284C7" stroke-width="2"><ellipse cx="0" cy="-7" rx="10" ry="4" fill="#0284C7" fill-opacity="0.18"/><path d="M-10,-7 v7 c0,2.2 4.5,4 10,4 s10,-1.8 10,-4 v-7"/><path d="M-10,0 v7 c0,2.2 4.5,4 10,4 s10,-1.8 10,-4 v-7"/></g>
+<text x="1434" y="79" font-size="19.5" font-weight="800" fill="#F8FAFC">SQLite / PG Store</text>
+<g transform="translate(360,132)"><polygon points="2,-13 -9,1 -1,1 -3,13 9,-2 1,-2" fill="#D97706"/></g>
+<text x="384" y="139" font-size="19.5" font-weight="800" fill="#F8FAFC">2.5s Fast Preview</text>
+<g transform="translate(620,132)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#EC4899"/><circle cx="9" cy="-9" r="2.5" fill="#EC4899" opacity="0.7"/></g>
+<text x="644" y="139" font-size="19.5" font-weight="800" fill="#F8FAFC">8s 4K Inpainting</text>
+<g transform="translate(880,132)"><path d="M0,-12 L10,-8 V1 C10,7 5,11 0,13 C-5,11 -10,7 -10,1 V-8 Z" fill="#059669" opacity="0.18" stroke="#059669" stroke-width="2"/><circle cx="0" cy="0" r="3.5" fill="#059669"/></g>
+<text x="904" y="139" font-size="19.5" font-weight="800" fill="#F8FAFC">Auto-TTL Cleanup</text>
+<g transform="translate(1150,132)" stroke="#3B82F6" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#3B82F6" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#3B82F6" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#3B82F6" fill-opacity="0.42"/></g>
+<text x="1174" y="139" font-size="19.5" font-weight="800" fill="#F8FAFC">Docker Compose</text>
+<g transform="translate(1410,132)" stroke="#EA580C" stroke-width="2.6" stroke-linecap="round"><line x1="-9" y1="-4" x2="-9" y2="4"/><line x1="-4.5" y1="-9" x2="-4.5" y2="9"/><line x1="0" y1="-12" x2="0" y2="12"/><line x1="4.5" y1="-7" x2="4.5" y2="7"/><line x1="9" y1="-3" x2="9" y2="3"/></g>
+<text x="1434" y="139" font-size="19.5" font-weight="800" fill="#F8FAFC">Cloudflare Edge</text>
+<rect x="296" y="198" width="1478" height="204" rx="16" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<rect x="314" y="212" width="356" height="98" rx="14" fill="#3B0726" stroke="#F472B6" stroke-width="1.5"/>
+<text x="492" y="234" text-anchor="middle" font-size="16" font-weight="800" fill="#DB2777">Salon-Retail-Scenes</text>
+<rect x="326" y="244" width="160" height="26" rx="8" fill="#500724" stroke="#F472B6" stroke-width="1.0"/>
+<text x="406.0" y="261.375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#F8FAFC">Post-Chemo Care</text>
+<rect x="498" y="244" width="160" height="26" rx="8" fill="#500724" stroke="#F472B6" stroke-width="1.0"/>
+<text x="578.0" y="261.375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#F8FAFC">Silver Hair Volume</text>
+<rect x="326" y="276" width="160" height="26" rx="8" fill="#500724" stroke="#F472B6" stroke-width="1.0"/>
+<text x="406.0" y="293.375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#F8FAFC">Bridal / Fashion</text>
+<rect x="498" y="276" width="160" height="26" rx="8" fill="#500724" stroke="#F472B6" stroke-width="1.0"/>
+<text x="578.0" y="293.375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#F8FAFC">In-Store iPad Mirror</text>
+<rect x="314" y="320" width="505" height="68" rx="14" fill="#2E1065" stroke="#C084FC" stroke-width="1.5"/>
+<rect x="326" y="333" width="154" height="42" rx="10" fill="#3B0764" stroke="#C084FC" stroke-width="1.0"/>
+<text x="403.0" y="358.55" text-anchor="middle" font-size="13" font-weight="700" fill="#F8FAFC">3-View Head Pose</text>
+<rect x="490" y="333" width="154" height="42" rx="10" fill="#3B0764" stroke="#C084FC" stroke-width="1.0"/>
+<text x="567.0" y="358.55" text-anchor="middle" font-size="13" font-weight="700" fill="#F8FAFC">Natural Hairline Blend</text>
+<rect x="654" y="333" width="154" height="42" rx="10" fill="#3B0764" stroke="#C084FC" stroke-width="1.0"/>
+<text x="731.0" y="358.55" text-anchor="middle" font-size="13" font-weight="700" fill="#F8FAFC">Top-3 SKU Match</text>
+<g transform="translate(705,246)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#6366F1"/><circle cx="9" cy="-9" r="2.5" fill="#6366F1" opacity="0.7"/></g>
+<text x="728" y="254" font-size="25" font-weight="900" fill="#F8FAFC">CrownStudio</text>
+<g transform="translate(705,290)"><polygon points="0,-13 11,-6.5 11,6.5 0,13 -11,6.5 -11,-6.5" fill="#4F46E5" opacity="0.16" stroke="#4F46E5" stroke-width="2"/><circle cx="0" cy="0" r="4.5" fill="#4F46E5"/></g>
+<text x="728" y="298" font-size="25" font-weight="900" fill="#F8FAFC">WigTryOnAI</text>
+<g transform="translate(865,305)">
+<rect x="-32" y="-12" width="64" height="44" rx="14" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2"/>
+<rect x="-24" y="-38" width="48" height="30" rx="10" fill="#60A5FA" stroke="#1D4ED8" stroke-width="2"/>
+<circle cx="-10" cy="-23" r="4.5" fill="#FFFFFF"/><circle cx="10" cy="-23" r="4.5" fill="#FFFFFF"/>
+<line x1="0" y1="-38" x2="0" y2="-48" stroke="#1D4ED8" stroke-width="3"/>
+<circle cx="0" cy="-51" r="5" fill="#F59E0B"/>
+<text x="0" y="15" text-anchor="middle" font-size="14" font-weight="900" fill="#FFFFFF">AI</text>
+</g>
+<rect x="920" y="212" width="836" height="176" rx="16" fill="#451A03" stroke="#FBBF24" stroke-width="1.5"/>
+<rect x="938" y="228" width="256" height="64" rx="12" fill="#78350F" stroke="#FBBF24" stroke-width="1.2"/>
+<text x="1066.0" y="265.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">468-Point Cranial &amp; Face Geometry</text>
+<rect x="1210" y="228" width="256" height="64" rx="12" fill="#78350F" stroke="#FBBF24" stroke-width="1.2"/>
+<text x="1338.0" y="265.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">Sub-3s Real-Time Salon Preview</text>
+<rect x="1482" y="228" width="256" height="64" rx="12" fill="#78350F" stroke="#FBBF24" stroke-width="1.2"/>
+<text x="1610.0" y="265.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">Zero-Helmet-Edge Lace Blending</text>
+<rect x="938" y="308" width="392" height="64" rx="12" fill="#78350F" stroke="#FBBF24" stroke-width="1.2"/>
+<text x="1134.0" y="345.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">Private Auto-Expiring Face Photos</text>
+<rect x="1346" y="308" width="392" height="64" rx="12" fill="#78350F" stroke="#FBBF24" stroke-width="1.2"/>
+<text x="1542.0" y="345.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">Online Try-On -&gt; Offline Fitting</text>
+<rect x="296" y="426" width="1238" height="672" rx="20" fill="#082F49" stroke="#38BDF8" stroke-width="2.2" filter="url(#sh)"/>
+<text x="330" y="476" font-size="31" font-weight="900" fill="#F8FAFC">CrownStudio AI Try-On 2.0</text>
+<rect x="735" y="444" width="128" height="38" rx="10" fill="#111827" stroke="#16A34A" stroke-width="1.8"/>
+<text x="799.0" y="468.425" text-anchor="middle" font-size="15.5" font-weight="800" fill="#16A34A">Python FastAPI</text>
+<rect x="875" y="444" width="128" height="38" rx="10" fill="#111827" stroke="#2563EB" stroke-width="1.8"/>
+<text x="939.0" y="468.425" text-anchor="middle" font-size="15.5" font-weight="800" fill="#2563EB">Next.js 16</text>
+<rect x="1015" y="444" width="128" height="38" rx="10" fill="#111827" stroke="#EA580C" stroke-width="1.8"/>
+<text x="1079.0" y="468.425" text-anchor="middle" font-size="15.5" font-weight="800" fill="#EA580C">MediaPipe 3D</text>
+<text x="1508" y="472" text-anchor="end" font-size="15.5" font-weight="800" fill="#94A3B8">FastAPI + MediaPipe 468-Pt + Hairline Inpainting</text>
+<rect x="320" y="496" width="1190" height="156" rx="16" fill="#0C4A6E" stroke="#38BDF8" stroke-width="1.6"/>
+<text x="915" y="525" text-anchor="middle" font-size="19" font-weight="900" fill="#F8FAFC">CrownStudio Cranial Diagnosis &amp; Photorealistic Hairline Synthesis Service</text>
+<rect x="338" y="538" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="522.0" y="566.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">Selfie Quality, Lighting &amp; Pose Gate</text>
+<rect x="731" y="538" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="915.0" y="566.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">3-Zone Facial Ratio &amp; Jawline Analyzer</text>
+<rect x="1124" y="538" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1308.0" y="566.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">2D/3D Wig Mesh Affine Warp Engine</text>
+<rect x="338" y="594" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="522.0" y="622.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">Diffusion Hairline &amp; Temple Inpainting</text>
+<rect x="731" y="594" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="915.0" y="622.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">SKU Cap-Size &amp; Hair-Fiber Matcher</text>
+<rect x="1124" y="594" width="368" height="46" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1308.0" y="622.425" text-anchor="middle" font-size="15.5" font-weight="700" fill="#F8FAFC">Appointment &amp; Coupon Conversion Funnel</text>
+<rect x="320" y="672" width="240" height="224" rx="16" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<text x="440" y="704" text-anchor="middle" font-size="18.5" font-weight="900" fill="#F8FAFC">Capture &amp; Guard</text>
+<rect x="336" y="720" width="208" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="440.0" y="746.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Front / 45-Deg / Side Selfie</text>
+<rect x="336" y="774" width="208" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="440.0" y="800.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Occlusion &amp; Blur Detector</text>
+<rect x="336" y="828" width="208" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="440.0" y="854.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Explicit Consent &amp; TTL</text>
+<rect x="584" y="672" width="608" height="224" rx="16" fill="#0F172A" stroke="#475569" stroke-width="2.2" filter="url(#sh)"/>
+<text x="888" y="704" text-anchor="middle" font-size="20" font-weight="900" fill="#F8FAFC">Dual-Track Wig Synthesis Engine</text>
+<rect x="612" y="722" width="196" height="62" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+<text x="710.0" y="758.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">468-Pt FaceMesh</text>
+<rect x="612" y="814" width="196" height="62" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+<text x="710.0" y="850.775" text-anchor="middle" font-size="16.5" font-weight="800" fill="#F8FAFC">Lace Hairline Blend</text>
+<rect x="846" y="768" width="162" height="62" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+<text x="927.0" y="804.425" text-anchor="middle" font-size="15.5" font-weight="800" fill="#F8FAFC">Skin-Tone Relight</text>
+<rect x="1032" y="768" width="140" height="62" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+<text x="1102.0" y="804.425" text-anchor="middle" font-size="15.5" font-weight="800" fill="#F8FAFC">Top-3 SKU Ranker</text>
+<path d="M604,845 C588,820 588,775 604,752" fill="none" stroke="#F8FAFC" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M814,752 C830,775 830,820 814,845" fill="none" stroke="#F8FAFC" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="808" y1="845" x2="842" y2="812" stroke="#F8FAFC" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="1008" y1="799" x2="1028" y2="799" stroke="#F8FAFC" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="1216" y="672" width="294" height="224" rx="16" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<text x="1363" y="704" text-anchor="middle" font-size="18.5" font-weight="900" fill="#F8FAFC">Omnichannel Retail</text>
+<rect x="1234" y="720" width="258" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1363.0" y="746.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Before / After Slider</text>
+<rect x="1234" y="774" width="258" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1363.0" y="800.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Cap Size &amp; Fiber Spec</text>
+<rect x="1234" y="828" width="258" height="42" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1363.0" y="854.075" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">1-Click Store Booking</text>
+<rect x="320" y="916" width="360" height="156" rx="16" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<text x="500" y="946" text-anchor="middle" font-size="18.5" font-weight="900" fill="#F8FAFC">Vision &amp; Diffusion Stack</text>
+<rect x="336" y="960" width="184" height="96" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="428.0" y="1003.425" text-anchor="middle" font-size="15" font-weight="700" fill="#F8FAFC">MediaPipe + BiSeNet</text>
+<text x="428.0" y="1022.175" text-anchor="middle" font-size="15" font-weight="700" fill="#F8FAFC">+ ControlNet Inpaint</text>
+<rect x="532" y="960" width="132" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="598.0" y="986.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">2.5s Fast Mode</text>
+<rect x="532" y="1013" width="132" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="598.0" y="1039.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">8s HD Studio</text>
+<rect x="704" y="916" width="376" height="156" rx="16" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<text x="892" y="946" text-anchor="middle" font-size="18.5" font-weight="900" fill="#F8FAFC">Cranial Aesthetics Engine</text>
+<rect x="720" y="960" width="344" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="892.0" y="986.575" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">6 Face Shapes x 5 Skin Undertones</text>
+<rect x="720" y="1013" width="344" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="892.0" y="1039.575" text-anchor="middle" font-size="14.5" font-weight="700" fill="#F8FAFC">Temple Recession &amp; Crown Volume Compensation</text>
+<rect x="1104" y="916" width="406" height="156" rx="16" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<text x="1307" y="946" text-anchor="middle" font-size="18.5" font-weight="900" fill="#F8FAFC">Privacy &amp; Medical Empathy</text>
+<rect x="1120" y="960" width="182" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1211.0" y="986.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">24h Auto-Purge</text>
+<rect x="1312" y="960" width="182" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1403.0" y="986.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">Encrypted Blob</text>
+<rect x="1120" y="1013" width="182" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1211.0" y="1039.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">Non-Intrusive UI</text>
+<rect x="1312" y="1013" width="182" height="43" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+<text x="1403.0" y="1039.4" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">Audit Logging</text>
+<line x1="560" y1="784" x2="580" y2="784" stroke="#F8FAFC" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1192" y1="784" x2="1212" y2="784" stroke="#F8FAFC" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="560" y1="916" x2="640" y2="886" stroke="#F8FAFC" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="888" y1="916" x2="888" y2="888" stroke="#F8FAFC" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1260" y1="916" x2="1220" y2="886" stroke="#F8FAFC" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="1554" y="426" width="220" height="672" rx="18" fill="#0F172A" stroke="#475569" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(1598,516)" stroke="#2563EB" stroke-width="2"><line x1="-7" y1="-6" x2="7" y2="-6"/><line x1="-7" y1="-6" x2="0" y2="8"/><line x1="7" y1="-6" x2="0" y2="8"/><circle cx="-7" cy="-6" r="3.5" fill="#2563EB"/><circle cx="7" cy="-6" r="3.5" fill="#2563EB"/><circle cx="0" cy="8" r="3.5" fill="#2563EB"/></g>
+<text x="1628" y="514" font-size="18" font-weight="800" fill="#F8FAFC">FaceMesh 468</text>
+<text x="1628" y="534" font-size="12" font-weight="500" fill="#94A3B8">3D Cranial Landmarks</text>
+<g transform="translate(1598,666)"><path d="M0,-13 C3,-4 4,-3 13,0 C4,3 3,4 0,13 C-3,4 -4,3 -13,0 C-4,-3 -3,-4 0,-13 Z" fill="#EA580C"/><circle cx="9" cy="-9" r="2.5" fill="#EA580C" opacity="0.7"/></g>
+<text x="1628" y="664" font-size="18" font-weight="800" fill="#F8FAFC">Lace Blend</text>
+<text x="1628" y="684" font-size="12" font-weight="500" fill="#94A3B8">Alpha + Diffusion</text>
+<g transform="translate(1598,816)" stroke="#16A34A" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#16A34A" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#16A34A" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#16A34A" fill-opacity="0.42"/></g>
+<text x="1628" y="814" font-size="18" font-weight="800" fill="#F8FAFC">SKU Matcher</text>
+<text x="1628" y="834" font-size="12" font-weight="500" fill="#94A3B8">Cap Size &amp; Density</text>
+<g transform="translate(1598,966)"><path d="M0,-12 L10,-8 V1 C10,7 5,11 0,13 C-5,11 -10,7 -10,1 V-8 Z" fill="#7C3AED" opacity="0.18" stroke="#7C3AED" stroke-width="2"/><circle cx="0" cy="0" r="3.5" fill="#7C3AED"/></g>
+<text x="1628" y="964" font-size="18" font-weight="800" fill="#F8FAFC">Privacy Vault</text>
+<text x="1628" y="984" font-size="12" font-weight="500" fill="#94A3B8">Auto-Expiring TTL</text>
+<rect x="296" y="1118" width="366" height="118" rx="18" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<text x="336" y="1164" font-size="20.5" font-weight="800" fill="#0D9488">FastAPI</text>
+<text x="518" y="1164" font-size="20.5" font-weight="800" fill="#F8FAFC">Next.js 16</text>
+<text x="336" y="1210" font-size="20.5" font-weight="800" fill="#2563EB">MediaPipe</text>
+<text x="488" y="1210" font-size="20.5" font-weight="800" fill="#EA580C">PyTorch</text>
+<rect x="682" y="1118" width="852" height="118" rx="18" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<circle cx="724" cy="1152" r="7" fill="#EA580C"/>
+<text x="740" y="1158" font-size="19" font-weight="700" fill="#F8FAFC">2.5s Fast Try-On</text>
+<circle cx="949" cy="1152" r="7" fill="#2563EB"/>
+<text x="965" y="1158" font-size="19" font-weight="700" fill="#F8FAFC">468 Landmarks</text>
+<circle cx="1219" cy="1152" r="7" fill="#16A34A"/>
+<text x="1235" y="1158" font-size="19" font-weight="700" fill="#F8FAFC">Zero Helmet Edge</text>
+<circle cx="724" cy="1202" r="7" fill="#E11D48"/>
+<text x="740" y="1208" font-size="19" font-weight="700" fill="#F8FAFC">24h Photo Purge</text>
+<circle cx="949" cy="1202" r="7" fill="#10B981"/>
+<text x="965" y="1208" font-size="19" font-weight="700" fill="#F8FAFC">Pytest Suite</text>
+<circle cx="1219" cy="1202" r="7" fill="#0284C7"/>
+<text x="1235" y="1208" font-size="19" font-weight="700" fill="#F8FAFC">Playwright E2E</text>
+<rect x="1554" y="1118" width="220" height="118" rx="18" fill="#111827" stroke="#38BDF8" stroke-width="1.8" filter="url(#sh)"/>
+<g transform="translate(1598,1154)" stroke="#0284C7" stroke-width="1.8" stroke-linejoin="round"><polygon points="0,-12 11,-6 0,0 -11,-6" fill="#0284C7" fill-opacity="0.28"/><polygon points="-11,-6 0,0 0,12 -11,6" fill="#0284C7" fill-opacity="0.14"/><polygon points="11,-6 0,0 0,12 11,6" fill="#0284C7" fill-opacity="0.42"/></g>
+<text x="1628" y="1160" font-size="18" font-weight="700" fill="#F8FAFC">Docker Stack</text>
+<g transform="translate(1598,1202)"><polygon points="2,-13 -9,1 -1,1 -3,13 9,-2 1,-2" fill="#EA580C"/></g>
+<text x="1628" y="1208" font-size="18" font-weight="700" fill="#F8FAFC">Cloudflare</text>
+<path d="M260 150 L278 150 L278 574 L320 574" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+<path d="M278 100 L296 100" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+<path d="M260 395 L278 395" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+<path d="M260 760 L280 760 L280 994 L320 994" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+<path d="M1510 783 L1538 783 L1538 1176 L1554 1176" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+<path d="M1300 1072 L1300 1106 L1108 1106 L1108 1118" stroke="#64748B" stroke-width="1.8" stroke-dasharray="6,5" fill="none"/>
+</svg>
